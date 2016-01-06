@@ -5,6 +5,31 @@
     <title>oh god slothbears</title>
   </head>
   <body>
-    SLOTHBEAR ATTACK
+    <h1>SLOTHBEAR ATTACK!  RUN FOR YOUR LIFE!  Are you ready?</h1>
+    <script type="text/javascript">
+      var userName = prompt('What is your name?');
+      console.log('The user\'s name is ' + userName);
+
+      var userStatus = 'alive';
+
+      alert('Hi there ' + userName + '.');
+
+      var userAnswer1 = prompt('This is a yes/no question, so please answer with Y or N.  A slothbear is coming at you.  Do you stand and fight?');
+      console.log('The user answered ' + userAnswer1);
+
+      if (userAnswer1 === 'Y') {
+        alert(userName + ', You punch the slothbear in the face, but it is a bear so it eats you.');
+        userStatus = 'dead';
+        console.log('The user is ' + userStatus + '.');
+      } else if (userAnswer1 === 'N') {
+        alert('Oh god ' + userName + ', the slothbear is chasing you!  It gets distracted by an ant pile, so you get away.');
+        userStatus = 'alive';
+        console.log('The user is ' + userStatus + '.');
+      } else {
+        alert('Your indecision is your downfall, ' + userName + '.  The slothbear eats you.');
+        userStatus = 'dead';
+        console.log('The user is ' + userStatus + '.');
+      }
+    </script>
   </body>
 </html>
